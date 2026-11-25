@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Control</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container mt-3">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <form action="#">
+            <div class="mb-3">
+              <h3 class="text-center">Input form Control</h3>
+              <label for="u_name" class="form-label">UserName</label>
+              <input type="text" id="u_name" class="form-control" />
+            </div>
+
+            <div class="mb-3">
+              <h3 class="textarea">Textarea</h3>
+              <label for="comment">Comment</label>
+              <textarea id="comment" class="form-control" rows="3"></textarea>
+            </div>
+
+            <div class="mb-3">
+              <h3 class="text-center">form control small lg</h3>
+              <label for="u_text" class="form-label">Some Text</label>
+              <input
+                type="text"
+                id="u_text"
+                class="form-control form-control-lg mb-2"
+              />
+              <input
+                type="text"
+                id="u_text"
+                class="form-control form-control-sm"
+              />
+            </div>
+
+            <div class="mb-3">
+              <h3 class="text-center">Email</h3>
+              <label for="u_email">Email Id</label>
+              <input
+                type="email"
+                id="u_email"
+                class="form-control form-control-email"
+                disabled
+                placeholder="john@gmail.com"
+              />
+            </div>
+
+            <div class="mb-3">
+              <h3 class="text-center">File</h3>
+              <label for="u_file">File</label>
+              <input type="file" id="u_file" class="form-control" />
+            </div>
+
+            <div class="mb-3">
+              <h3 class="text-center">DataList</h3>
+              <label for="u_datalist">DataList Example</label>
+              <input
+                list="datalistOption"
+                class="form-control"
+                id="u_datalist"
+                placeholder="Select City"
+              />
+              <datalist id="datalistOption">
+                <option value="Delhi"></option>
+                <option value="Raipur"></option>
+              </datalist>
+            </div>
+
+            <div class="mb-3">
+              <h3 class="text-center">Select</h3>
+              <label for="u_select">Select City</label>
+              <select id="u_select" class="form-control">
+                <option>Select City</option>
+                <option value="Delhi">Delhi</option>
+              </select>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
